@@ -4,7 +4,7 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/script.js"></script>
   <title>Pig Dice</title>
 </head>
   <body>
@@ -18,13 +18,14 @@
             <h2>Player 1</h2>
             <h4>Name:
             <input id="inputtedName1"></input></h4>
+            <h3 id="outputname1"></h3>
             <div class="col-lg-3">
-              <p class="p1turnscore">Turn Score</p>
+              <p class="p1turnscore">Turn Score: </p>
               <div class="resultp1turnscore">
               </div>
             </div>
             <div class="col-lg-3">
-              <p class="p1totalscore">Total Score</p>
+              <p class="p1totalscore">Total Score: </p>
               <div class="resultp1totalscore">
               </div>
             </div>
@@ -33,24 +34,28 @@
             <h2>Player 2</h2>
             <h4>Name:
             <input id="inputtedName2"></input></h4>
+            <h3 id="outputname2"></h3>
             <div class="col-lg-3">
-              <p class="p2turnscore">Turn Score</p>
+              <p class="p2turnscore">Turn Score: </p>
               <div class="resultp2turnscore">
               </div>
             </div>
             <div class="col-lg-3">
-              <p class="p2turnscore">Total Score</p>
+              <p class="p2turnscore">Total Score: </p>
               <div class="resultp2totalscore">
               </div>
             </div>
           </div>
         </div>
         <div class="row2">
+          <center><button type="submit" class="btn btn-success btn-lg btn-block" id="letsPlay">Let's Play</button></center>
         </br>
+          <center><button class="btn btn-primary btn-lg btn-block" id="holdButton">Hold</button></center>
         </br>
-          <center><button type="submit" class="btn btn-success btn-lg btn-block" id="rollButton">Roll</button></center>
-        </br>
-          <center><button type="submit" class="btn btn-primary btn-lg btn-block" id="rollButton">Hold</button></center>
+          <center><img class="resize" src="img/dice.png" alt="image of dice" id="rollButton"></br>Roll</center>
+
+
+
         </div>
         </div>
       </form><!--close form-->
