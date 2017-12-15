@@ -7,7 +7,7 @@ var rolldice = function() { // Rolling the dice
 }
 
 function Player() {
-  debugger;
+  // debugger;
   this.roll = 0;
   this.turn = 0;
   this.total = 0;
@@ -24,6 +24,15 @@ Player.prototype.addDice = function() {
 
 }
 
+var clearNames = function() {
+  $("#inputtedName1").val("");
+  $("#inputtedName2").val("");
+}
+
+function resetFields() {
+  $("input#inputtedName1").val("");
+  $("input#inputtedName2").val("");
+}
 
 //frontend
 $(document).ready(function(){
@@ -40,18 +49,27 @@ $(document).ready(function(){
         resetFields();
       }); //closes lets play button
 
-  $("#rollButton").click(function(event) {
+  $("#p1rollButton").click(function(event) {
     event.preventDefault();
     player1 = new Player();
-    player2 = new Player();
-
-
     player1.roll = rolldice();;
     $(".resultp1turnscore").append(player1.roll + ", ");
     player1.addDice();
+
+  $("#p2rollButton").click(function(event) {
+    event.preventDefault();
+    player2 = new Player();
     player2.roll = rolldice();
     $(".resultp2turnscore").append(player2.roll + ", ");
     player2.addDice();
 
-});
+  $("p1holdButton").click(function(event) {
+    event.preventDefault();
+    player1 = new Player();
+    $("#p1totalscore").append(player1.roll + this.total);
+  }
+)
+
+    });
+  });
 });

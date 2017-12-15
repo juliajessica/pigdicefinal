@@ -16,26 +16,28 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>Player 1</h2>
-            <h4>Name:
-            <input id="inputtedName1"></input></h4>
+            <h3>Name:
+            <input id="inputtedName1" class="form-control input-md" id="inputmd"></input></h4>
             <h3 id="outputname1"></h3>
             <div class="col-lg-3">
               <p class="p1turnscore">Turn Score: </p>
               <div class="resultp1turnscore">
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-6">
               <p class="p1totalscore">Total Score: </p>
               <div class="resultp1totalscore">
               </div>
+              <center><button class="btn btn-primary btn-lg btn-block" id="p1holdButton">Hold</button></center></br>
+              <center><img class="resize" src="img/dice.png" alt="image of dice" id="p1rollButton"></br>Player 1 Roll</br>
             </div>
           </div>
           <div class ="col-lg-6">
             <h2>Player 2</h2>
-            <h4>Name:
-            <input id="inputtedName2"></input></h4>
+            <h3>Name:
+            <input id="inputtedName2" class="form-control input-md" id="inputmd"></input></h4>
             <h3 id="outputname2"></h3>
-            <div class="col-lg-3">
+            <div class="col-lg-6">
               <p class="p2turnscore">Turn Score: </p>
               <div class="resultp2turnscore">
               </div>
@@ -44,18 +46,15 @@
               <p class="p2turnscore">Total Score: </p>
               <div class="resultp2totalscore">
               </div>
+              <center><button class="btn btn-primary btn-lg btn-block" id="p2holdButton">Hold</button></center>
+            </br>
+              <center><img class="resize" src="img/dice.png" alt="image of dice" id="p2rollButton"></br>Player 2 Roll
             </div>
           </div>
         </div>
+      </br>
         <div class="row2">
           <center><button type="submit" class="btn btn-success btn-lg btn-block" id="letsPlay">Let's Play</button></center>
-        </br>
-          <center><button class="btn btn-primary btn-lg btn-block" id="holdButton">Hold</button></center>
-        </br>
-          <center><img class="resize" src="img/dice.png" alt="image of dice" id="rollButton"></br>Roll</center>
-
-
-
         </div>
         </div>
       </form><!--close form-->
